@@ -1,0 +1,27 @@
+{
+  "name": "opencascade.js-examples",
+  "version": "1.0.0",
+  "description": "Examples for the opencascade.js project",
+  "main": "src/main.js",
+  "author": "Sebastian Alff <donalffons@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://donalffons.github.io/opencascade.js-examples",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "rm dist -fr && webpack --mode=production",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "opencascade.js": "^2.0.0-beta.54fa06a",
+    "three": "^0.124.0"
+  }
+}
